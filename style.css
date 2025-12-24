@@ -244,3 +244,50 @@ body{
 @media (prefers-reduced-motion: reduce){
   .opened .card, .opened .inside{ animation: none; }
 }
+
+/* 📱 Ajustes mobile */
+@media (max-width: 600px) {
+
+  body {
+    padding: 16px;
+  }
+
+  .wrap {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* CENTRA verticalmente */
+    align-items: center;     /* CENTRA horizontalmente */
+    gap: 14px;
+  }
+
+  .hint {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .card3d {
+    width: 100%;
+    max-width: 360px;
+    height: 240px; /* reduz altura no telemóvel */
+  }
+
+  .msg {
+    font-size: 16px; /* texto não rebenta */
+    line-height: 1.4;
+  }
+
+  .sub {
+    font-size: 12px;
+  }
+
+  .row {
+    gap: 8px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 9px 12px;
+  }
+}
