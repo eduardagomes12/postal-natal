@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Postal de Natal 🎄</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- canvas fica atrás do cartão (CSS resolve) -->
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main class="wrap">
+    <p class="hint">
+      Clica no postal (ou carrega <kbd>Enter</kbd>) 🎁
+    </p>
+
+    <section class="card3d" id="stage">
+      <div class="card" id="card" role="button" tabindex="0" aria-label="Abrir postal de Natal">
+        <div class="face front">
+          <div class="seal">
+            <div class="pixel">Porque gosto muito de vocês ❤️</div>
+            <div class="pixel blue">POSTAL DE NATAL</div>
+            <div class="tap">tap to open</div>
+          </div>
+        </div>
+
+        <div class="face back">
+          <div class="inside">
+            <div class="glow" aria-hidden="true"></div>
+            <div>
+              <div class="msg">FELIZ NATAL ❤️</div>
+              <div class="sub">— com muito amor da Dudinha 🎄</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <button class="btn" id="replay" type="button">Replay confetti ✨</button>
+      <button class="btn" id="mute" type="button">🔊 Música</button>
+    </div>
+  </main>
+
+  <!-- MP3 -->
+  <audio id="music" preload="auto">
+    <source src="./music1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="./script.js"></script>
+</body>
+</html>
